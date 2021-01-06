@@ -1,6 +1,6 @@
 Flask==1.1.1
-Flask-Admin @ file:///tmp/build/80754af9/flask-admin_1592429635880/work
-Flask-Bcrypt @ file:///tmp/build/80754af9/flask-bcrypt_1592513356562/work
+Flask-Admin
+Flask-Bcrypt
 Flask-Login==0.5.0
 Flask-Migrate==2.5.3
 Flask-MySQLdb==0.2.0
@@ -18,4 +18,4 @@ psycopg2-binary==2.8.6
 
 requests==2.24.0
 
-SQLAlchemy @ file:///C:/ci/sqlalchemy_1598374801163/work
+SQLAlchemy
