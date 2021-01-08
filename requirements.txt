@@ -12,13 +12,10 @@ Flask-Uploads==0.2.1
 Flask-WTF==0.14.3
 
 gunicorn==20.0.4
-httplib2==0.18.1
 
 Jinja2==2.11.2
 json5==0.9.5
-jsonschema
-
-passlib==1.7.2
+jsonschema @ file:///C:/ci/jsonschema_1594363671836/work
 
 psycopg2==2.8.6
 psycopg2-binary==2.8.6
@@ -28,9 +25,6 @@ python-dotenv
 python-editor==1.0.4
 
 requests==2.24.0
-
-SQLAlchemy
-sqlparse==0.3.1
 
 urllib3==1.25.10
 
