@@ -9,7 +9,7 @@ import time
 def get_date(date, subdate=None):
     if subdate is not None:
         date = date - subdate
-    return (str(date.month) + "月" + str(date.day) + "日")
+    return (str(date.month) + "m" + str(date.day) + "d")
 
 
 def add_csv_rows(writer, category, keyword, date_from, date_to):
@@ -30,9 +30,6 @@ def add_csv_rows(writer, category, keyword, date_from, date_to):
                 h2 = li.find("h2", class_="p-item-title")
                 title = h2.find("a")
                 url = title.get("href")
-                print(title.text)
-                print(url)
-                print(post_date)
                 writer.writerow([title.text, url, post_date])
 
         except:
