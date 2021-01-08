@@ -1,0 +1,11 @@
+<a href="{{ url_for('return_xml') }}">一覧：XML表示画面へ</a>
+{% if items_list %}
+<div>新たに以下のデータがDBに追加されました</div>
+{% for i in items_list %}
+<div>
+{{ i }}
+</div>
+{% endfor %}
+{% else %}
+<div>新たにDBに追加されたデータはありません</div>
+{% endif %}
