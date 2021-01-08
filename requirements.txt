@@ -15,7 +15,7 @@ gunicorn==20.0.4
 
 Jinja2==2.11.2
 json5==0.9.5
-jsonschema @ file:///C:/ci/jsonschema_1594363671836/work
+jsonschema
 
 psycopg2==2.8.6
 psycopg2-binary==2.8.6
