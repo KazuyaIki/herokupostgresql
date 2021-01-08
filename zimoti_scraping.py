@@ -15,7 +15,7 @@ def get_date(date, subdate=None):
 def add_csv_rows(writer, category, keyword, date_from, date_to):
     keyword = urllib.parse.quote(keyword)
     r = requests.get("https://jmty.jp/all/" + category + "?keyword=" + keyword)
-    soup = BeautifulSoup(r.text, "html")
+    soup = BeautifulSoup(r.text, "lxml")
 
     lis = soup.find_all(class_="p-articles-list-item")
 
