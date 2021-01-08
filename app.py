@@ -11,6 +11,7 @@ import csv
 dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
 load_dotenv(verbose=True, dotenv_path=dotenv_path)
 
+basedir = os.path.abspath(os.path.dirname(__name__))
 
 app = Flask(__name__)
 
@@ -25,7 +26,8 @@ def zimoti_scraping():
 @app.route('/scraping/<string:days>')
 def zimoti_result(days):
     export_csv(str(days))
-    files = glob.glob('C:/Users/kzyik/D_Files/PYTHON_FILES/DB/herokuPostgresql/csv/*.csv')
+    file_path = os.path.join(basedir, 'csv/*.csv')
+    files = glob.glob(file_path)
     latest_file = max(files, key=os.path.getctime)
     fieldnames = ['title', 'url', 'user_name']
     items_list = []
