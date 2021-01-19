@@ -5,19 +5,10 @@ dicttoxml==1.7.4
 Flask==1.1.1
 Flask-Admin
 Flask-Bcrypt
-Flask-Login==0.5.0
-Flask-Migrate==2.5.3
-Flask-MySQLdb==0.2.0
-Flask-PyMongo==2.3.0
-Flask-SQLAlchemy==2.4.3
-Flask-Uploads==0.2.1
-Flask-WTF==0.14.3
 
 gunicorn==20.0.4
 
 Jinja2==2.11.2
-json5==0.9.5
-jsonschema
 
 lxml
 
@@ -33,3 +24,4 @@ requests==2.24.0
 urllib3==1.25.10
 
 xmltodict==0.12.0
+

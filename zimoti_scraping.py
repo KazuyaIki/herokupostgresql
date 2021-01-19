@@ -10,7 +10,7 @@ import lxml
 def get_date(date, subdate=None):
     if subdate is not None:
         date = date - subdate
-    return (str(date.month) + "m" + str(date.day) + "d")
+    return (str(date.month) + "月" + str(date.day) + "日")
 
 def add_csv_rows(writer, category, keyword, date_from, date_to):
     keyword = urllib.parse.quote(keyword)
